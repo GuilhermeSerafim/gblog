@@ -7,7 +7,7 @@ export default function MenuLink({ children, to }) {
         <NavLink
             className={({ isActive }) => `
                 ${styles.link}
-                ${isActive ? styles.link__destacado : ""}
+                ${isActive ? styles.linkDestacado : ""}
             `}
             to={to}
             end
