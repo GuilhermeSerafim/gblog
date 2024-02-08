@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Inicio from './componentes/Inicio';
-import SobreMim from './componentes/SobreMim';
+import Inicio from './pages/Inicio';
+import SobreMim from './pages/SobreMim';
+import Menu from './componentes/Menu';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter> {/* Criando SPA */}
+        <Menu/>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/sobremim" element={<SobreMim />} />
