@@ -2,7 +2,6 @@
     font-size: 1.25rem;
     line-height: 1.5rem;
     color: var(--cor-fonte-principal);
-    /* Adicione as propriedades para o efeito do menu */
     position: relative;
     transition: color 0.3s ease;
   }

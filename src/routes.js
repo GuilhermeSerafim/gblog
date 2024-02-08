@@ -4,7 +4,7 @@ import Inicio from './pages/Inicio';
 import SobreMim from './pages/SobreMim';
 import Menu from './componentes/Menu';
 
-function App() {
+function AppRoutes() {
   return (
     <div className="App">
       <BrowserRouter> {/* Criando SPA */}
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
