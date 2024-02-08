@@ -1,18 +1,18 @@
-import { Link, useLocation } from "react-router-dom";
-import styles from "./Menu.module.css";
+import { NavLink } from 'react-router-dom';
+import styles from './MenuLink.module.css';
 
 export default function MenuLink({ children, to }) {
-    // Visualizar algumas props dos parametros da URL
-    const localizacao = useLocation();
 
     return (
-        <Link
+        <NavLink
+            className={({ isActive }) => `
+                ${styles.link}
+                ${isActive ? styles.link__destacado : ""}
+            `}
             to={to}
-            className={`
-            ${styles.link}
-            ${localizacao.pathname === to ? styles.linkDestacado : ""}
-             `}>
+            end
+        >
             {children}
-        </Link>
+        </NavLink>
     )
 }
