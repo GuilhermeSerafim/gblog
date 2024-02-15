@@ -5,10 +5,10 @@ export default function Banner() {
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
                 <h1 className={styles.titulo}>
-                    Bem-vindo Explorador
+                    Bem-vindo ao Gblog
                 </h1>
                 <p className={styles.paragrafo}>
-                    Pronto para uma jornada emocionante pelos horizontes infinitos da tecnologia? Neste blog, você será como um verdadeiro explorador, desbravando os territórios desconhecidos da inteligência artificial, mergulhando nas profundezas da mente humana e contemplando os mistérios do universo.
+                    Aqui você será como um verdadeiro explorador, desbravando os territórios desconhecidos da inteligência artificial, mergulhando nas profundezas da mente humana e contemplando os mistérios do universo.
                     Prepare-se para uma viagem além da imaginação, onde cada descoberta é uma porta para o futuro.
                 </p>
             </div>
