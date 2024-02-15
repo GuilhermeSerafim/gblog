@@ -3,7 +3,7 @@
     color: var(--branco);
     padding: 2rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     column-gap: .5rem;
 }
@@ -13,12 +13,21 @@
     transition: color 0.3s ease;
 }
 
+.logos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logos > * {
+  margin: 0 20px;
+}
+
 .link {
     font-size: 1.25rem;
     line-height: 1.5rem;
     color: var(--cor-fonte-principal);
-    position: relative;
-    
+    position: relative;    
   }
   
   .rodape__autor::after {
