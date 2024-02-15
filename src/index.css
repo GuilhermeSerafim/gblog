@@ -7,8 +7,8 @@
 :root {
   --azul-escuro: #041833;
   --azul-medio: #1875E8;
-  --roxo: #800080;
   --cor-fonte-principal: #041833;
+  --cor-fonte-secundaria: #800080;
   --cor-fonte-post: #444444;
   --branco: #FFF;
   --fonte-principal: 'Neue Haas Grotesk Display Pro', 'Raleway', sans-serif;
