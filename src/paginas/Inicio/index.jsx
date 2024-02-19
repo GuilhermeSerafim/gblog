@@ -5,8 +5,6 @@ import Post from "componentes/Post";
 
 export default function Inicio() {
     return (
-        <main>
-            <Banner />
             <ul className={styles.posts}>
                 {posts.map(post => (
                     <li key={post.id}>
@@ -14,6 +12,5 @@ export default function Inicio() {
                     </li>
                 ))}
             </ul>
-        </main>
     )
 }   
