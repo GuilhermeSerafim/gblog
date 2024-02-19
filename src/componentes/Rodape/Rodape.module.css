@@ -23,6 +23,13 @@
   margin: 0 20px;
 }
 
+.logo {
+  transition: transform .2s;
+}
+.logo:hover {
+  transform: translate(0, -0.3rem);
+}
+
 .link {
     font-size: 1.25rem;
     line-height: 1.5rem;
