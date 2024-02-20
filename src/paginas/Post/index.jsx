@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
-import styles from "./Post.module.css";
+import "./Post.css";
 import posts from "json/posts.json";
 import SubPost from "componentes/SubPost";
+import ReactMarkdown from "react-markdown";
 
 export default function Post() {
     const parametros = useParams();
@@ -13,8 +14,13 @@ export default function Post() {
                 fotoCapa={`/assets/posts/${(post.id)}/capa.png`}
                 titulo={post.titulo}
             >
-                texto
+                <div className="post-markdown-container">
+                    <ReactMarkdown>
+                        {post.texto}
+                    </ReactMarkdown>
+                </div>
+
             </SubPost>
-        </> 
+        </>
     )
 }
