@@ -11,6 +11,9 @@
 .postPendente {
     opacity: 0.5;
 }
+.postPendente > .subtitulo {
+    color: var(--azul-medio);
+}
 
 .post:hover {
     transform: translate(0, -1rem);
@@ -33,7 +36,7 @@
     font-family: var(--fonte-secundaria);
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--azul-medio);
+    color: var(--azul-escuro);
     line-height: 1.5rem;
 }
 .botaoLer {
