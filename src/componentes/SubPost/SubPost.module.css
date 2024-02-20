@@ -8,14 +8,27 @@
     height: 204px;
 }
 
+@keyframes amanhecer {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
 .fotoCapa {
     width: 100%;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.7;
     position: absolute;
     top: 0;
-    z-index: -1;
+    z-index: -1;    
+    animation: amanhecer 1s ease-in-out forwards;
 }
 
 .titulo {
@@ -24,6 +37,8 @@
     font-size: 4rem;
     display: flex;
     align-items: center;
+    font-weight: 500;
+    color: #fff;
 }
 
 .postConteudoContainer {

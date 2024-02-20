@@ -4,11 +4,17 @@
     width: 30vw;
     float: right;
     border-radius: 20px;
+    transition: transform .2s;
+}
+
+.fotoSobreMim:hover {
+    transform: translate(0, -0.5rem);
 }
 
 .subtitulo {
     margin-bottom: 2rem;
     font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .paragrafo {

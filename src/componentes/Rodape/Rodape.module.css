@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-items: center;
     column-gap: .5rem;
+    clear: both;
 }
 
 .rodape__autor {

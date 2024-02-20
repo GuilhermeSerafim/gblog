@@ -2,6 +2,7 @@ import Banner from "componentes/Banner";
 import { Outlet } from "react-router-dom";
 
 export default function PaginaPadrao() {
+    // Criado para aparecer em todas as rotas da aplicação menos 404
     return (
         <main>
             <Banner />
