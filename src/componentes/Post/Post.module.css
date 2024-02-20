@@ -1,7 +1,7 @@
 .post {
     text-align: center;
-    width: 282px;
-    height: 360px;
+    width: 400px;
+    height: 500px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
     padding-bottom: 1.5rem;
@@ -13,7 +13,8 @@
 }
 
 .capa {
-    width: 100%;
+    width: 90%;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .titulo {
@@ -24,6 +25,9 @@
     margin: 1.5rem 0 1.75rem;
 }
 
+.subtitulo {
+    font-weight: 400;
+}
 .botaoLer {
     display: inline-block;
     border-radius: 24px;

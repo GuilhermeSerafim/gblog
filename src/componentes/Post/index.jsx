@@ -10,6 +10,7 @@ export default function Post({ post }) {
             />
 
             <h2 className={styles.titulo}>{post.titulo}</h2>
+            <h3 className={styles.subtitulo}>teste</h3>
         </div>
     )
 }
