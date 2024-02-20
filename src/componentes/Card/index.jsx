@@ -12,7 +12,7 @@ export default function Card({ post }) {
                 />
 
                 <h2 className={styles.titulo}>{post.titulo}</h2>
-                <h3 className={styles.subtitulo}>teste</h3>
+                <h3 className={styles.subtitulo}>Breve descrição do texto</h3>
             </div>
         </Link>
     )

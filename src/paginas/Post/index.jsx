@@ -1,10 +1,14 @@
 import { useParams } from "react-router-dom";
 import styles from "./Post.module.css";
+import posts from "json/posts.json";
 
 export default function Post() {
     const parametros = useParams();
-    console.log(parametros);
+    const post = posts.find((post) => post.id == parametros.id);
     return (
-     <h1>Post {parametros.id}</h1>
+        <>
+            <h1>{post.titulo}</h1>
+            <p>{post.texto}</p>
+        </> 
     )
 }
