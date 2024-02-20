@@ -2,8 +2,19 @@ import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 
 export default function Card({ post }) {
+    const rolarParaCima = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Para uma rolagem suave
+        });
+    }
     return (
-        <Link to={`/posts/${post.id}`}>
+        <Link 
+            to={`/posts/${post.id}`}
+            onClick={(() => {
+                rolarParaCima();
+            })}
+        >
             <div className={styles.post}>
                 <img
                     className={styles.capa}

@@ -18,15 +18,19 @@ export default function PaginaNaoEncontrada() {
                     <Button
                         variant="contained"
                         size="large"
-                        style={{padding: "15px 30px", borderRadius:"20px"}}
+                        style={{ padding: "15px 30px", borderRadius: "20px", display: "inline-block" }}
                         onClick={() => navegar(-1)}
                     >
                         Voltar
                     </Button>
                 </div>
-                <img className={styles.imagemCachorro} alt="imagem de um cachorro" src={erro404} />
+                <img
+                    className={styles.imagemCachorro}
+                    alt="imagem de um cachorro"
+                    src={erro404}
+                />
             </div>
-            <div className={styles.espacoEmbranco}></div>
+            <div className={styles.espacoEmBranco}></div>
         </>
 
     )

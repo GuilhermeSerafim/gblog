@@ -12,13 +12,16 @@ function AppRoutes() {
       <BrowserRouter> {/* Criando SPA */}
         <Menu />
         <Routes>
+
           {/*Rotas aninhadas */}
           <Route path='/' element={<PaginaPadrao />}>
             <Route index element={<Inicio />} />
-            <Route path="sobremim" element={<SobreMim />} />
-            <Route path="posts/:id" element={<Post />} />
           </Route>
-          <Route path="*" element={<PaginaNaoEncontrada/>} />
+
+          <Route path="sobremim" element={<SobreMim />} />
+          <Route path="posts/:id" element={<Post />} />
+          <Route path="*" element={<PaginaNaoEncontrada />} />
+
         </Routes>
         <Rodape />
       </BrowserRouter>
