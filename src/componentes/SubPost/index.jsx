@@ -5,7 +5,7 @@ export default function SubPost({ fotoCapa, titulo, children }) {
         <article className={styles.postModeloContainer}>
             <div
                 className={styles.fotoCapa}
-                style={{ backgroundImage: `url(${fotoCapa})` }}
+                style={{ backgroundImage: `url(${fotoCapa})`}}
             >
             </div>
 
