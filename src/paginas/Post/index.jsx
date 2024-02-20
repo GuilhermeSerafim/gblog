@@ -4,7 +4,7 @@ import posts from "json/posts.json";
 
 export default function Post() {
     const parametros = useParams();
-    const post = posts.find((post) => post.id == parametros.id);
+    const post = posts.find((post) => post.id === Number(parametros.id));
     return (
         <>
             <h1>{post.titulo}</h1>
