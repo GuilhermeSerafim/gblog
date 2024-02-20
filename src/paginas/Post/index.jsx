@@ -5,6 +5,6 @@ export default function Post() {
     const parametros = useParams();
     console.log(parametros);
     return (
-     <h1>Opa</h1>
+     <h1>Post {parametros.id}</h1>
     )
 }
