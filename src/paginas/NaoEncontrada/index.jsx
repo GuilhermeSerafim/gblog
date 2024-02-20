@@ -1,6 +1,6 @@
 import styles from "./NaoEncontrada.module.css";
 import { Button } from "@mui/material";
-import erro404 from "assets/erro_404.png";
+import foto404 from "assets/erro_404.png";
 import { useNavigate } from "react-router-dom";
 
 export default function PaginaNaoEncontrada() {
@@ -27,7 +27,7 @@ export default function PaginaNaoEncontrada() {
                 <img
                     className={styles.imagemCachorro}
                     alt="imagem de um cachorro"
-                    src={erro404}
+                    src={foto404}
                 />
             </div>
             <div className={styles.espacoEmBranco}></div>

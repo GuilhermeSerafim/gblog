@@ -26,7 +26,11 @@
 }
 
 .subtitulo {
-    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--azul-medio);
+    line-height: 1.5rem;
 }
 .botaoLer {
     display: inline-block;

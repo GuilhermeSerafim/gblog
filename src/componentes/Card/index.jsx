@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
+import { useState } from 'react';
 
 export default function Card({ post }) {
     const rolarParaCima = () => {
@@ -8,6 +9,8 @@ export default function Card({ post }) {
             behavior: 'smooth' // Para uma rolagem suave
         });
     }
+
+    let postPendente = post.subtitulo === "" ? "Em desenvolvimento" : post.subtitulo;
     return (
         <Link 
             to={`/posts/${post.id}`}
@@ -23,7 +26,7 @@ export default function Card({ post }) {
                 />
 
                 <h2 className={styles.titulo}>{post.titulo}</h2>
-                <h3 className={styles.subtitulo}>Breve descrição do texto</h3>
+                <h3 className={styles.subtitulo}>{postPendente}</h3>
             </div>
         </Link>
     )
