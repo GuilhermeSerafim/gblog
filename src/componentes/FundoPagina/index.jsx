@@ -1,6 +1,6 @@
-import styles from "./SubPost.module.css";
+import styles from "./FundoPagina.module.css";
 
-export default function SubPost({ fotoCapa, titulo, children }) {
+export default function FundoPagina({ fotoCapa, titulo, children }) {
     return (
         <article className={styles.postModeloContainer}>
             <div

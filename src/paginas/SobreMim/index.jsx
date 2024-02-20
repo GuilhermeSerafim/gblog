@@ -1,10 +1,10 @@
-import SubPost from "componentes/SubPost";
+import FundoPagina from "componentes/FundoPagina";
 import fotoCapa from "assets/sobre_mim_capa.png";
 import styles from "./SobreMim.module.css";
 import fotoSobreMim from 'assets/sobre_mim_foto.png';
 export default function SobreMim() {
     return (
-        <SubPost
+        <FundoPagina
             fotoCapa={fotoCapa}
             titulo={"Sobre mim"}
         >
@@ -35,6 +35,6 @@ export default function SobreMim() {
             <p className={styles.paragrafo}>
                 E você me conhece por quais dessas "dimensões"? Se eu me perguntasse, como eu me conheço e definisse um eu em todos esses aspectos, diria que me conheço como um explorador. Estou em busca de expandir meus horizontes, desafiar meus limites, afinal de contas, a vida é uma jornada emocionante, repleta de experiências que me permitem expandir meus horizontes e descobrir novos caminhos. Acredito que o aprendizado é uma jornada infinita e que cada dia é uma oportunidade de crescer, evoluir e aprender.
             </p>
-        </SubPost>
+        </FundoPagina>
     )
 }

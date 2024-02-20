@@ -8,6 +8,10 @@
     transition: transform .2s;
 }
 
+.postPendente {
+    opacity: 0.5;
+}
+
 .post:hover {
     transform: translate(0, -1rem);
 }

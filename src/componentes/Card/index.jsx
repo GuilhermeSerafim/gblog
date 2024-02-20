@@ -11,6 +11,8 @@ export default function Card({ post }) {
     }
 
     let postPendente = post.subtitulo === "" ? "Em desenvolvimento" : post.subtitulo;
+    const classePost = post.subtitulo === "" ? `${styles.post} ${styles.postPendente}` : styles.post;
+
     return (
         <Link 
             to={`/posts/${post.id}`}
@@ -18,7 +20,7 @@ export default function Card({ post }) {
                 rolarParaCima();
             })}
         >
-            <div className={styles.post}>
+            <div className={classePost}>
                 <img
                     className={styles.capa}
                     src={`/assets/posts/${post.id}/capa.png`}

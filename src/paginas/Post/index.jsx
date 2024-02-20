@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import "./Post.css";
 import posts from "json/posts.json";
-import SubPost from "componentes/SubPost";
+import FundoPagina from "componentes/FundoPagina";
 import ReactMarkdown from "react-markdown";
 import PaginaNaoEncontrada from "paginas/NaoEncontrada";
 
@@ -17,7 +17,7 @@ export default function Post() {
     }
 
     return (
-        <SubPost
+        <FundoPagina
             fotoCapa={`/assets/posts/${post.id}/capa.png`}
             titulo={post.titulo}
         >
@@ -26,6 +26,6 @@ export default function Post() {
                     {post.texto}
                 </ReactMarkdown>
             </div>
-        </SubPost>
+        </FundoPagina>
     )
 }
