@@ -9,13 +9,13 @@ import PostsRecomendados from "componentes/PostsRecomendados";
 
 export default function Post() {
     const parametros = useParams();
-    const post = posts.find((post) => post.id === Number(parametros.id));
+    const postAtual = posts.find((post) => post.id === Number(parametros.id)); // Retorna primeiro elemento que atender a condição
 
     // Parte animação escrita do titulo
     const [titulo, setTitulo] = useState("");
     useEffect(() => {
-        animarTexto(post.titulo, setTitulo);
-    }, [post.titulo]);
+        animarTexto(postAtual.titulo, setTitulo);
+    }, [postAtual.titulo]);
 
     const animarTexto = (texto, setTexto) => {
         let index = 0;
@@ -28,7 +28,7 @@ export default function Post() {
         }, 20);
     }
 
-    if (!post) {
+    if (!postAtual) {
         //O return interrompe a execução da função e retorna o a PaginaNaoEncontrada.
         return (
             <PaginaNaoEncontrada />
@@ -37,15 +37,15 @@ export default function Post() {
 
     return (
         <FundoPagina
-            fotoCapa={`/assets/posts/${post.id}/capa.png`}
+            fotoCapa={`/assets/posts/${postAtual.id}/capa.png`}
             titulo={titulo}
         >
             <div className="post-markdown-container">
                 <Markdown>
-                    {post.texto}
+                    {postAtual.texto}
                 </Markdown>
             </div>
-        <PostsRecomendados postAtual={post}/>
+        <PostsRecomendados postAtual={postAtual}/>
         </FundoPagina>
-    )
+    );
 }
