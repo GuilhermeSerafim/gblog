@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import styles from "./PostsRecomendados.module.css";
 import posts from "json/posts.json";
 import Card from "componentes/Card";
