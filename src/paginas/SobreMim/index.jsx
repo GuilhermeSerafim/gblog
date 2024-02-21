@@ -30,7 +30,7 @@ export default function SobreMim() {
                 Mas não me rótulo apenas um programador; também há o Guilherme armador do basquete; o Guiler dos jogos; Entre outras versões de mim mesmo.  Encontrar o equilíbrio entre minhas diferentes identidades é complexo, mas entendo isso como uma riqueza, que me permite explorar plenamente todas as dimensões do meu ser.
             </p>
             <h3 className={styles.subtitulo}>
-                Guilherme - O Explorador
+                O Explorador
             </h3>
             <p className={styles.paragrafo}>
                 E você me conhece por quais dessas "dimensões"? Se eu me perguntasse, como eu me conheço e definisse um eu em todos esses aspectos, diria que me conheço como um explorador. Estou em busca de expandir meus horizontes, desafiar meus limites, afinal de contas, a vida é uma jornada emocionante, repleta de experiências que me permitem expandir meus horizontes e descobrir novos caminhos. Acredito que o aprendizado é uma jornada infinita e que cada dia é uma oportunidade de crescer, evoluir e aprender.
