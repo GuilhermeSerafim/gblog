@@ -1,4 +1,3 @@
-import Markdown from "react-markdown";
 import styles from "./Newlestter.module.css";
 
 export default function Newlestter() {
