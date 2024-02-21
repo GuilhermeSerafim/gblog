@@ -5,6 +5,7 @@ import FundoPagina from "componentes/FundoPagina";
 import Markdown from "react-markdown";
 import PaginaNaoEncontrada from "paginas/NaoEncontrada";
 import { useEffect, useState } from "react";
+import PostsRecomendados from "componentes/PostsRecomendados";
 
 export default function Post() {
     const parametros = useParams();
@@ -28,7 +29,7 @@ export default function Post() {
     }
 
     if (!post) {
-        //O return interrompe a execução da função e retorna o JSX especificado.
+        //O return interrompe a execução da função e retorna o a PaginaNaoEncontrada.
         return (
             <PaginaNaoEncontrada />
         )
@@ -44,6 +45,7 @@ export default function Post() {
                     {post.texto}
                 </Markdown>
             </div>
+        <PostsRecomendados postAtual={post}/>
         </FundoPagina>
     )
 }

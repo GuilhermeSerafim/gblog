@@ -3,7 +3,7 @@
     width: 400px;
     height: 500px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     padding-bottom: 1.5rem;
     transition: transform .2s;
 }
@@ -36,8 +36,8 @@
 }
 
 .capa {
-    width: 90%;
-    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .titulo {
