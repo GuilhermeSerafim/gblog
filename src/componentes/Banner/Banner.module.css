@@ -6,7 +6,22 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
- 
+
+/* Animação */
+.gatinhoAstronauta {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 .titulo {
     font-family: var(--fonte-principal);
     font-size: 4rem;
