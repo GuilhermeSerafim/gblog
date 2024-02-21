@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
-import { useState } from 'react';
 
 export default function Card({ post }) {
     const rolarParaCima = () => {
@@ -15,6 +14,7 @@ export default function Card({ post }) {
 
     return (
         <Link 
+            className={styles.fadein}
             to={`/posts/${post.id}`}
             onClick={(() => {
                 rolarParaCima();

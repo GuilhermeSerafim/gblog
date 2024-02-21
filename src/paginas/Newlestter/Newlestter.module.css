@@ -1,0 +1,22 @@
+.dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dev > h1 {
+    color: var(--azul-escuro);
+    margin: 20px 0;
+}
+
+.dev__imagem {
+    margin-bottom: 210px;
+    margin-top: 50px;
+    border-radius: 30px;
+    transition: transform .2s;
+}
+
+.dev__imagem:hover {
+    transform: translate(0, -0.3rem);
+}

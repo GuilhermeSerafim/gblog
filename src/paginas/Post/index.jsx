@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import "./Post.css";
 import posts from "json/posts.json";
 import FundoPagina from "componentes/FundoPagina";
-import ReactMarkdown from "react-markdown";
+import Markdown from "react-markdown";
 import PaginaNaoEncontrada from "paginas/NaoEncontrada";
 
 export default function Post() {
@@ -22,9 +22,9 @@ export default function Post() {
             titulo={post.titulo}
         >
             <div className="post-markdown-container">
-                <ReactMarkdown>
+                <Markdown>
                     {post.texto}
-                </ReactMarkdown>
+                </Markdown>
             </div>
         </FundoPagina>
     )

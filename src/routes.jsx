@@ -6,6 +6,7 @@ import Rodape from 'componentes/Rodape';
 import Post from 'paginas/Post';
 import PaginaNaoEncontrada from 'paginas/NaoEncontrada';
 import Banner from 'componentes/Banner';
+import Newlestter from 'paginas/Newlestter';
 
 function AppRoutes() {
   return (
@@ -20,6 +21,7 @@ function AppRoutes() {
           <Route path="sobremim" element={<SobreMim />} />
           <Route path="posts/:id" element={<Post />} />
           <Route path="*" element={<PaginaNaoEncontrada />} />
+          <Route path="newlestter" element={<Newlestter/>}/>
         </Routes>
         <Rodape />
       </BrowserRouter>

@@ -10,7 +10,7 @@ export default function Menu() {
                 <MenuLink to={"/"}>ÍNICIO</MenuLink>
                 <MenuLink to={"/sobremim"}>SOBRE MIM</MenuLink>
                 <Button color="secondary" variant="outlined">
-                    <MenuLink to={"/#"}>NEWSLETTER</MenuLink> {/*Em desenvolvimento */}
+                    <MenuLink to={"/newlestter"}>NEWLESTTER</MenuLink> {/*Em desenvolvimento */}
                 </Button>
             </nav>
         </header>
