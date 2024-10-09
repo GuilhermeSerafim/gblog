@@ -7,12 +7,12 @@ export default function Rodape() {
             <ul className={styles.logos}>
                     <li className={styles.logo}>
                         <a href="https://www.youtube.com/channel/UCDwZfT1FeLccSRAgWubJHng" target="blank">
-                            <img src="assets/youtube.png" alt="Youtube" />
+                            <img src="assets/Youtube.png" alt="Youtube" />
                         </a>
                     </li>
                     <li className={styles.logo}>
                         <a href="wa.link/8dnjl7" target="blank">
-                            <img src="assets/whatsapp.png" alt="Whatsapp" />
+                            <img src="assets/Whatsapp.png" alt="Whatsapp" />
                         </a>
                     </li>
                     <li className={styles.logo}>
